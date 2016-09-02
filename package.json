@@ -57,7 +57,7 @@
     "build:client:production:js": "run-s clean:client:production:js mkdir:client:production:js && NODE_ENV=production webpack",
     "clean:client:production:css": "rm -rf build/production/client/css",
     "mkdir:client:production:css": "mkdir -p build/production/client/css",
-    "build:client:production:css": "run-s clean:client:production:css mkdir:client:production:css && node-sass --source-map true client/scss/main.scss build/production/client/css/$npm_package_name.$npm_package_version.css && cleancss --source-map --output build/production/client/css/$npm_package_name.$npm_package_version.min.css build/production/client/css/$npm_package_name.$npm_package_version.css",
+    "build:client:production:css": "run-s clean:client:production:css mkdir:client:production:css && node-sass --source-map true client/scss/index.scss build/production/client/css/$npm_package_name.$npm_package_version.css && cleancss --source-map --output build/production/client/css/$npm_package_name.$npm_package_version.min.css build/production/client/css/$npm_package_name.$npm_package_version.css",
     "clean:client:production:assets": "rm -rf build/production/client/assets",
     "build:client:production:assets": "run-s clean:client:production:assets && cp -r client/assets build/production/client"
   },
