@@ -14,7 +14,7 @@
     "clean": "rm -rf build",
     "serve": "npm start",
     "watch": "run-s watch:*",
-    "deploy": "git checkout deploy || git checkout -b deploy && git pull heroku master && git merge master --no-edit && npm run build && git add -f build && git commit -m 'Deploy' --allow-empty && git push heroku deploy:master && git checkout master",
+    "heroku-postbuild": "npm run build",
     "clean:server": "rm -rf build/server",
     "mkdir:server": "mkdir -p build/server",
     "build:server": "run-s build:server:production",
