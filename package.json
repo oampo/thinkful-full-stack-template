@@ -48,7 +48,7 @@
     "watch:client:dev:assets": "run-s build:client:dev:assets && chokidar client/assets/**/* -c 'npm run build:client:dev:assets'",
     "clean:client:production": "rm -rf build/production/client",
     "mkdir:client:production": "mkdir -p build/production/client",
-    "build:client:production": "run-s build:client:production:html build:client:production:js build:client:production:css",
+    "build:client:production": "run-s build:client:production:*",
     "clean:client:production:html": "rm -f build/production/client/index.html",
     "mkdir:client:production:html": "run-s mkdir:client:production",
     "build:client:production:html": "run-s clean:client:production:html mkdir:client:production:html && { echo '{\"production\": true}'; cat package.json; } | json --merge | mustache - client/index.html > build/production/client/index.html",
