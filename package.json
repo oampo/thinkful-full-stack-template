@@ -34,7 +34,7 @@
     "clean:client:dev:html": "rm -f build/client/dev/index.html",
     "mkdir:client:dev:html": "run-s mkdir:client:dev",
     "build:client:dev:html": "run-s clean:client:dev:html mkdir:client:dev:html && mustache package.json client/index.html > build/dev/client/index.html",
-    "watch:client:dev:html": "run-s build:client:dev:html && chokidar index.html -c 'npm run build:client:dev:html'",
+    "watch:client:dev:html": "run-s build:client:dev:html && chokidar client/index.html -c 'npm run build:client:dev:html'",
     "clean:client:dev:js": "rm -rf build/dev/client/js",
     "mkdir:client:dev:js": "mkdir -p build/dev/client/js",
     "build:client:dev:js": "run-s clean:client:dev:js mkdir:client:dev:js && NODE_ENV=development webpack",
