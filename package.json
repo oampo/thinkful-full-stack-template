@@ -44,7 +44,7 @@
     "build:client:dev:css": "run-s clean:client:dev:css mkdir:client:dev:css && node-sass --source-map true client/scss/index.scss build/dev/client/css/$npm_package_name.$npm_package_version.css",
     "watch:client:dev:css": "run-s build:client:dev:css && NODE_ENV=development node-sass --source-map true -wr client/scss/index.scss build/dev/client/css/$npm_package_name.$npm_package_version.css",
     "clean:client:dev:assets": "rm -rf build/dev/client/assets",
-    "build:client:dev:assets": "run-s clean:client:dev:assets && cp -r client/assets build/dev/client",
+    "build:client:dev:assets": "run-s clean:client:dev:assets mkdir:client:dev && cp -r client/assets build/dev/client",
     "watch:client:dev:assets": "run-s build:client:dev:assets && chokidar client/assets/**/* -c 'npm run build:client:dev:assets'",
     "clean:client:production": "rm -rf build/production/client",
     "mkdir:client:production": "mkdir -p build/production/client",
