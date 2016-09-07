@@ -9,6 +9,7 @@ A template for developing and deploying full stack JavaScript apps.  Supports ES
 * Move into your projects directory: `cd ~/YOUR_PROJECTS_DIRECTORY`
 * Clone this repository: `https://github.com/oampo/thinkful-full-stack-template YOUR_PROJECT_NAME`
 * Move into the project directory: `cd YOUR_PROJECT_NAME`
+* Install the dependencies: `npm install`
 * Create a new repo on GitHub: https://github.com/new
     * Make sure the "Initialize this repository with a README" option is left **un**checked
 * Update the remote to point to your GitHub repository: `git remote set-url origin https://github.com/YOUR_GITHUB_USERNAME/YOUR_REPOSITORY_NAME`
